@@ -22,7 +22,7 @@ public class WifiConnect extends CordovaPlugin {
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		if (action.equals("connectTo")) {
 			Context context = cordova.getActivity().getApplicationContext();
-			PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, connect(args,context));
+			PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, connect(args,context)+"");
 			pluginResult.setKeepCallback(true);
 			callbackContext.sendPluginResult(pluginResult);
 			return true;
@@ -30,7 +30,7 @@ public class WifiConnect extends CordovaPlugin {
 		return false;
 	}
     
-    boolean connect (JSONArray args,Context context) throws JSONException {
+    boolean connect(JSONArray args,Context context) throws JSONException {
 	    boolean result = false;
 	    WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
 	    List<WifiConfiguration> arraylist = wifiManager.getConfiguredNetworks();
