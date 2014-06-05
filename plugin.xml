@@ -5,11 +5,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
            id="org.apache.cordova.wifiinfo"
       version="0.1.1">
 
-    <name>Wifi Network Information</name>
+    <name>Wifi Network Connect</name>
     <description>Cordova Wifi Connect Plugin</description>
     <license>MIT</license>
     <keywords>cordova,network,wifi,Connect,gkopevski</keywords>
-    <repo>https://github.com/gkopevski/PhoneGap-WifiInfoPlugin</repo>
+    <repo>https://github.com/gkopevski/plugin-cordovaWiFiConnect/</repo>
 
     <js-module src="www/cordovaWifiConnect.js" name="wifi">
         <clobbers target="wifi" />
