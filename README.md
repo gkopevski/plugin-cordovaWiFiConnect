@@ -17,6 +17,7 @@ API
 ### Example 
 ```javascript
     
+    var args = [{"SSID":"Goran's iPhone"}];
     window.wifiConnect(function(data){
         console.log(data);
     },args);
