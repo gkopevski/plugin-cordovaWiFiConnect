@@ -1,4 +1,4 @@
-package org.apache.cordova.wifiinfo;
+package org.apache.cordova.wificonnect;
 
 import java.math.BigInteger;
 import java.net.InetAddress;
