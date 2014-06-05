@@ -19,8 +19,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="WiFiConnect">
-                <param name="android-package" value="org.apache.cordova.wificonnect.WiFiConnect"/>
+            <feature name="WifiConnect">
+                <param name="android-package" value="org.apache.cordova.wificonnect.WifiConnect"/>
             </feature>
         </config-file>
 
@@ -28,7 +28,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
         </config-file>
 
-        <source-file src="src/android/WiFiConnect.java" target-dir="src/org/apache/cordova/wificonnect" />
+        <source-file src="src/android/WifiConnect.java" target-dir="src/org/apache/cordova/wificonnect" />
 
     </platform>
     
